@@ -1,0 +1,21 @@
+# Core Python libraries
+pandas==2.2.2
+numpy==2.0.1
+
+# Database connection
+sqlalchemy==2.0.32
+psycopg2-binary==2.9.9   # PostgreSQL connector
+sqlite-utils==3.36       # If you use SQLite for simplicity
+
+# Orchestration
+apache-airflow==2.9.2
+
+# Jupyter for analysis
+jupyter==1.0.0
+notebook==7.2.1
+
+# Testing
+pytest==8.3.2
+
+# Optional (if using Dockerized setup later)
+python-dotenv==1.0.1   # For environment variables
