@@ -1,9 +1,9 @@
-Netflix ETL Pipeline
+# Netflix ETL Pipeline
 
 A simple end-to-end ETL (Extract, Transform, Load) pipeline project using open-source tools and Python.
 This project takes Netflix data, cleans and transforms it, and loads it into a database for analysis.
 
-🚀 Project Overview
+## 🚀 Project Overview
 
 The goal of this project is to demonstrate an end-to-end data engineering workflow:
 
@@ -17,7 +17,7 @@ Orchestration: Use Apache Airflow to schedule and automate the pipeline.
 
 Visualization: Analyze the processed data using SQL or Jupyter Notebooks.
 
-🏗️ Architecture
+## 🏗️ Architecture
 
 [Netflix Dataset] → [Extract] → [Transform] → [Load to DB] → [Airflow Orchestration] → [Analysis/Visualization]
 
@@ -31,7 +31,7 @@ Orchestration: Apache Airflow DAGs.
 
 Analysis: SQL queries, Pandas, or visualization tools.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Python (pandas, sqlalchemy)
 
@@ -43,7 +43,7 @@ Jupyter Notebook
 
 Docker (optional) for containerization
 
-📂 Repository Structure
+## 📂 Repository Structure
 
 netflix-etl-pipeline/
 │── README.md              # Project overview, setup steps
@@ -60,7 +60,7 @@ netflix-etl-pipeline/
 │── docs/                  # Documentation and diagrams
 │── tests/                 # Unit tests
 
-⚡ Setup Instructions
+## ⚡ Setup Instructions
 
 1. Clone the repo:
    git clone https://github.com/your-username/netflix-etl-pipeline.git
@@ -77,7 +77,7 @@ netflix-etl-pipeline/
    python src/load/load_netflix.py
 5. Start Airflow for orchestration.
 
-📊 Example Analysis
+## 📊 Example Analysis
 
 After loading data into PostgreSQL:
 
@@ -87,7 +87,7 @@ Find top 10 directors with most Netflix titles.
 
 Check content added by year.
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Add Docker for easier deployment.
 
