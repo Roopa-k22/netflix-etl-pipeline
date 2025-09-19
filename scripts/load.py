@@ -10,5 +10,5 @@ def load_to_sqlite(csv_file, db_file="netflix.db", table_name="netflix"):
     print(f"Loaded {len(df)} rows into SQLite table '{table_name}' in {db_file}")
 
 if __name__ == "__main__":
-    processed_file = "../data/processed/netflix_processed.csv"
+    processed_file = "/Users/roopakrishna/Documents/netflix-etl-pipeline/data/processed/netflix_processed.csv"
     load_to_sqlite(processed_file)

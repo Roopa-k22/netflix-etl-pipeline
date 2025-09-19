@@ -21,8 +21,8 @@ def transform_data(df):
     return df
 
 if __name__ == "__main__":
-    raw_file = "../data/raw/netflix_titles.csv"
-    processed_file = "../data/processed/netflix_processed.csv"
+    raw_file = "/Users/roopakrishna/Documents/netflix-etl-pipeline/data/raw/netflix_titles.csv"
+    processed_file = "/Users/roopakrishna/Documents/netflix-etl-pipeline/data/processed/netflix_processed.csv"
 
     # Extract first
     df = pd.read_csv(raw_file)

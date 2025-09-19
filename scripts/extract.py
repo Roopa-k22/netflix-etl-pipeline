@@ -7,5 +7,5 @@ def extract_data(file_path):
     return df
 
 if __name__ == "__main__":
-    raw_file = "../data/raw/netflix_titles.csv"
+    raw_file = "/Users/roopakrishna/Documents/netflix-etl-pipeline/data/raw/netflix_titles.csv"
     df = extract_data(raw_file)

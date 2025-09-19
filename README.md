@@ -43,59 +43,5 @@ Jupyter Notebook
 
 Docker (optional) for containerization
 
-## 📂 Repository Structure
-
-netflix-etl-pipeline/
-│── README.md              # Project overview, setup steps
-│── requirements.txt       # Python dependencies
-│── data/                  # Raw and processed datasets
-│   ├── raw/               # Original Netflix dataset
-│   └── processed/         # Cleaned & transformed data
-│── src/                   # Source code
-│   ├── extract/           # Extraction scripts
-│   ├── transform/         # Transformation scripts
-│   └── load/              # Loading scripts
-│── airflow_dags/          # Airflow DAGs
-│── notebooks/             # Jupyter notebooks
-│── docs/                  # Documentation and diagrams
-│── tests/                 # Unit tests
-
-## ⚡ Setup Instructions
-
-1. Clone the repo:
-   git clone https://github.com/your-username/netflix-etl-pipeline.git
-   cd netflix-etl-pipeline
-2. Create a virtual environment & install dependencies:
-   python3 -m venv venv
-   source venv/bin/activate   # Mac/Linux
-   venv\Scripts\activate      # Windows
-   pip install -r requirements.txt
-3. Add Netflix dataset in data/raw/.
-4. Run ETL pipeline manually:
-   python src/extract/extract_netflix.py
-   python src/transform/transform_netflix.py
-   python src/load/load_netflix.py
-5. Start Airflow for orchestration.
-
-## 📊 Example Analysis
-
-After loading data into PostgreSQL:
-
-Count number of movies vs TV shows.
-
-Find top 10 directors with most Netflix titles.
-
-Check content added by year.
-
-## 🔮 Future Improvements
-
-Add Docker for easier deployment.
-
-Automate dataset updates.
-
-Add dbt for transformations.
-
-Build dashboard with Tableau/Power BI/Metabase.
-
 
 
