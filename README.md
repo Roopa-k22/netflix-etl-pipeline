@@ -19,7 +19,26 @@ Visualization: Analyze the processed data using SQL or Jupyter Notebooks.
 
 ## 🏗️ Architecture
 
-[Netflix Dataset] → [Extract] → [Transform] → [Load to DB] → [Airflow Orchestration] → [Analysis/Visualization]
+[Netflix Dataset] → [Extract] → [Transform] → [Load to DB] → [Analysis/Visualization]
+
++-------------------+      +-------------------+      +-------------------+      +-------------------+
+|                   |      |                   |      |                   |      |                   |
+|   Raw CSV File    +----->+   Extract Script  +----->+  Transform Script +----->+   Load Script     |
+| (netflix_titles)  |      |  (extract.py)     |      |  (transform.py)   |      |  (load.py)        |
+|                   |      |                   |      |                   |      |                   |
++-------------------+      +-------------------+      +-------------------+      +-------------------+
+                                                                                          |
+                                                                                          v
+                                                                              +-----------------------+
+                                                                              |    SQLite Database    |
+                                                                              |     (netflix.db)      |
+                                                                              +-----------------------+
+                                                                                          |
+                                                                                          v
+                                                                              +-----------------------+
+                                                                              |   SQLTools/VS Code    |
+                                                                              |   (Query & Analysis)  |
+                                                                              +-----------------------+
 
 Dataset: Netflix titles dataset (movies and shows).
 
