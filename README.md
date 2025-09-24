@@ -27,6 +27,8 @@ ETL Scripts: Python scripts for each step.
 
 Database: PostgreSQL (or SQLite for simplicity).
 
+Next Steps to consider:
+
 Orchestration: Apache Airflow DAGs.
 
 Analysis: SQL queries, Pandas, or visualization tools.
